@@ -75,10 +75,10 @@ const axisProperties = {
     'y-reverse': 'column-reverse',
   },
   transform: {
-    x: (translate) => `translate(${-translate}%, 0)`,
-    'x-reverse': (translate) => `translate(${translate}%, 0)`,
-    y: (translate) => `translate(0, ${-translate}%)`,
-    'y-reverse': (translate) => `translate(0, ${translate}%)`,
+    x: (translate) => `translate3d(${-translate}%, 0, 0)`,
+    'x-reverse': (translate) => `translate3d(${translate}%, 0, 0)`,
+    y: (translate) => `translate3d(0, ${-translate}%, 0)`,
+    'y-reverse': (translate) => `translate3d(0, ${translate}%, 0)`,
   },
   length: {
     x: 'width',
